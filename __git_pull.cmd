@@ -2,7 +2,7 @@
 REM Выполняет команду PULL для текущего репозитория
 
 REM Устанавливает заголовок окна
-title Run "PULL %CD%"
+title Run "PULL [%CD%]"
 
 REM Запоминает корневую папку
 set ROOT_PATH=%cd%

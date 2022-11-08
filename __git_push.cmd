@@ -2,7 +2,7 @@
 REM Выполняет команду PUSH для текущего репозитория
 
 REM Устанавливает заголовок окна
-title Run "PUSH %CD%"
+title Run "PUSH [%CD%]"
 
 REM Запоминает корневую папку
 set ROOT_PATH=%cd%
