@@ -11,6 +11,6 @@ REM Переходит в рабочую папку
 cd ./../__Git.Scripts.Windows/__private
 
 REM Выполняет команду PUSH
-call __git_CMD.cmd %ROOT_PATH% "git push -u origin master"
+call __git_CMD.cmd %ROOT_PATH% "git push origin --all"
 
 pause
