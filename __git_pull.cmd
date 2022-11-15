@@ -1,16 +1,16 @@
-@echo off
-REM Выполняет команду PULL для текущего репозитория
+@ECHO OFF
+:: Выполняет команду PULL для текущего репозитория
 
-REM Устанавливает заголовок окна
-title Run "PULL [%CD%]"
+:: Устанавливает заголовок окна
+TITLE Run "PULL [%CD%]"
 
-REM Запоминает корневую папку
-set ROOT_PATH=%cd%
+:: Запоминает корневую папку
+SET ROOT_PATH=%CD%
 
-REM Переходит в рабочую папку
-cd ./../__Git.Scripts.Windows/__private
+:: Переходит в рабочую папку
+CD ./../__Git.Scripts.Windows/__private
 
-REM Выполняет команду PULL
-call __git_CMD.cmd %ROOT_PATH% "git pull"
+:: Выполняет команду PULL
+CALL __git_CMD.cmd --PATH %ROOT_PATH% git pull
 
 pause

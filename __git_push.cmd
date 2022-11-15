@@ -1,16 +1,16 @@
-@echo off
-REM Выполняет команду PUSH для текущего репозитория
+@ECHO OFF
+:: Выполняет команду PUSH для текущего репозитория
 
-REM Устанавливает заголовок окна
-title Run "PUSH [%CD%]"
+:: Устанавливает заголовок окна
+TITLE Run "PUSH [%CD%]"
 
-REM Запоминает корневую папку
-set ROOT_PATH=%cd%
+:: Запоминает корневую папку
+SET ROOT_PATH=%CD%
 
-REM Переходит в рабочую папку
-cd ./../__Git.Scripts.Windows/__private
+:: Переходит в рабочую папку
+CD ./../__Git.Scripts.Windows/__private
 
-REM Выполняет команду PUSH
-call __git_CMD.cmd %ROOT_PATH% "git push origin --all"
+:: Выполняет команду PUSH
+CALL __git_CMD.cmd --PATH %ROOT_PATH% CALL ./../__Git.Scripts.Windows/__private/__git_check_unpushed_and_push.cmd
 
 pause
