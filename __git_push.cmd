@@ -13,4 +13,4 @@ CD ./../__Git.Scripts.Windows/__private
 :: Выполняет команду PUSH
 CALL __git_CMD.cmd --PATH %ROOT_PATH% CALL ./../__Git.Scripts.Windows/__private/__git_check_unpushed_and_push.cmd
 
-pause
+PAUSE

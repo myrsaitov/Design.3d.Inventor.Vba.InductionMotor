@@ -13,4 +13,4 @@ CD ./../__Git.Scripts.Windows/__private
 :: Выполняет команду PULL
 CALL __git_CMD.cmd --PATH %ROOT_PATH% git pull
 
-pause
+PAUSE
